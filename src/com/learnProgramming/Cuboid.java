@@ -1,31 +1,27 @@
 package com.learnProgramming;
 
-public class Cuboid extends Rectangle{ //import the parent class method
-    //declare the field
+import java.awt.*;
+
+public class Cuboid  extends Rectangle {
+    //Declare all the field
     private double height;
 
-    //Create the constructor for init the field
+    //Create the constructor
     public Cuboid(double width, double length, double height){
-        //inherent the parent class field
-        super(width, length);
-
-        //condition for the Cuboid field
-        if (height <= 0){
+        super(width,length);
+        if (height <= 0){ //Condition to check the number is valid or not
             this.height = 0;
         } else {
             this.height = height;
         }
     }
 
-    // Set up the getter
+    //Create the getter
     public double getHeight(){
-        return this.height;
+        return height;
     }
-
     public double getVolume(){
-        double area = getArea();
-        double TotalVolume = this.height * area;
-        return TotalVolume;
+        return (getArea() * this.height);
     }
 }
 

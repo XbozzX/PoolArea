@@ -1,19 +1,22 @@
 package com.learnProgramming;
 
+import com.learnProgramming.Cuboid;
+
+import java.awt.*;
+
 public class Main {
-
     public static void main(String[] args) {
-	// write your code here
-        Rectangle rectangle1 = new Rectangle(7,5);
-        System.out.println("Width= " + rectangle1.getWidth());
-        System.out.println("Area= " + rectangle1.getArea());
-        System.out.println("Length= " + rectangle1.getLength());
+        Rectangle rectangle = new Rectangle(5, 10);
+        System.out.println("rectangle.width= " + rectangle.getWidth());
+        System.out.println("rectangle.length= " + rectangle.getLength());
+        System.out.println("rectangle.area= " + rectangle.getArea());
 
-        Cuboid cuboid1 = new Cuboid(1.2, 4.2,2.3);
-        System.out.println("Width= " + cuboid1.getWidth());
-        System.out.println("Area= " + cuboid1.getArea());
-        System.out.println("Length= " + cuboid1.getLength());
-        System.out.println("Height= " + cuboid1.getHeight());
-        System.out.println("Volume= " + cuboid1.getVolume());
+        Cuboid cuboid = new Cuboid(5,10,5);
+        System.out.println("cuboid.width= " + cuboid.getWidth());
+        System.out.println("cuboid.length= " + cuboid.getLength());
+        System.out.println("cuboid.area= " + cuboid.getArea());
+        System.out.println("cuboid.height= " + cuboid.getHeight());
+        System.out.println("cuboid.volume= " + cuboid.getVolume());
+
     }
 }
